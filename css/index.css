@@ -5,7 +5,6 @@ span,
 applet,
 object,
 iframe,
-h1,
 h2,
 h3,
 h4,
@@ -91,6 +90,11 @@ body header nav {
   flex-direction: row;
   justify-content: center;
   margin-top: 4rem;
+  margin-bottom: 2rem;
+}
+body header nav .active {
+  font-weight: bolder;
+  text-shadow: 2px 3px 2px black;
 }
 body header nav a:nth-last-child(3) {
   display: flex;
@@ -120,4 +124,43 @@ body header nav a:nth-last-child(1) {
   font-size: 1.7rem;
   width: 6rem;
   height: 2rem;
+}
+body section,
+body .title-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+}
+body section #bgimg,
+body .title-container #bgimg {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 70rem;
+  height: 50rem;
+  background-image: url("/assets/Alfred-Sisley.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+body section #bgimg h1,
+body .title-container #bgimg h1 {
+  display: flex;
+  flex-direction: space-between;
+  color: white;
+  justify-content: center;
+  align-content: center;
+  margin-top: 11rem;
+  width: 100%;
+  height: 100%;
+  font-size: 6rem;
+}
+body section #bgimg button,
+body .title-container #bgimg button {
+  display: flex;
+  flex-direction: space-between;
+  align-content: center;
+  width: 10%;
+  height: 10%;
+  margin-bottom: 19rem;
 }
