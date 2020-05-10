@@ -1,5 +1,15 @@
 # Sprint Challenge: Advanced CSS and Intro to JavaScript - Influential Artists
 
+# Git reflog to show date of specific commit hash tag
+git log --no-walk --pretty=fuller fe0commit7agh2sh
+# Git show specific commit by hash
+git show -s --pretty=reference 
+# To see all commit date and times within my repo
+git reflog --date=iso
+# Show every commit since the dawn of time (includes previous repo)
+git log --pretty=reference
+
+
 **Read these instructions carefully. Understand exactly what is expected _before_ starting this Sprint Challenge.**
 
 This challenge allows you to practice the concepts and techniques learned over the past week and apply them in a concrete project. This Sprint explored Advanced CSS and JavaScript fundamentals. During this Sprint, you studied studied preprocessing, variable declaration, conditionals, loops, functions, arrays, and objects. In your challenge this week, you will demonstrate proficiency by creating a website for artisits with data from a `JSON` object.
