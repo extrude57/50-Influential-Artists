@@ -24,11 +24,12 @@ Demonstrate your understanding of this week's concepts by answering the followin
 
 Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager
 
-1. How would you describe preprocessing to someone new to CSS?
-2. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
-3. How would you explain the concept of a variable to someone new to programming?
-4. What is the purpose of using functions in code?
-5. What is a JSON data?
+1. How would you describe preprocessing to someone new to CSS? It is a language that can make css styles encapsulated with variables and
+    allow you to drop in parameters through mixins. Not to mention nesting allows you to write less while doing the same exact thing in css. A preprocessing language seem to be a must in Professional Web Design.
+2. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble? My favorite concept is the use of mixins and I like how much less you write by encapsulating and refactoring styles. Mixins are my favorite next to less nesting. What gets me into trouble so far is the use of when. I can't figure out how to use when right. 
+3. How would you explain the concept of a variable to someone new to programming? A variable is like naming a value. 
+4. What is the purpose of using functions in code? To make code more redenfined and less work through the use of algorithms. 
+5. What is a JSON data? JSON data is like xml or name pair values found in php or js with arrays.<b> There is a name that allows the data to be located and the value to that name which is the value. JSON files are basicly just arrays with a name value pair. </b>
 
 You may need to look up an answer but, you are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
@@ -40,23 +41,23 @@ Follow these steps to set up your project:
 
 #### Git Set up
 
-- [ ] Create a forked copy of this project.
-- [ ] Add your Team Lead as collaborator on Github.
-- [ ] Clone your OWN version of the repository (Not Lambda's by mistake!).
-- [ ] Create a new branch: git checkout -b `<firstName-lastName>`.
+- [ C] Create a forked copy of this project.
+- [C] Add your Team Lead as collaborator on Github.
+- [C] Clone your OWN version of the repository (Not Lambda's by mistake!).
+- [ C] Create a new branch: git checkout -b `<firstName-lastName>`.
 
 #### Preprocessor Set up
 
-* [ ] Verify that you have LESS installed correctly by running `lessc -v` in your terminal, if you don't get a version message back, reach out to your project manager for help.
-* [ ] In your project's root folder, run the following command `less-watch-compiler less css index.less`
-* [ ] Verify your compiler is working correctly by changing the `background-color` on the `body` selector to `red` in your `index.less` file.
+* [ C] Verify that you have LESS installed correctly by running `lessc -v` in your terminal, if you don't get a version message back, reach out to your project manager for help.
+* [ C] In your project's root folder, run the following command `less-watch-compiler less css index.less`
+* [ C] Verify your compiler is working correctly by changing the `background-color` on the `body` selector to `red` in your `index.less` file.
 * [ ] Once you see the red screen, you can delete that style and you're ready to start on the next task
 
 ### Task 2a:  Minimum Viable Product - PreProcessing
 
 #### Import LESS Files
 
-* [ ] Navigate to your `index.less` file. Notice the file is blank. You have been asked to use a certain import order. That order is as follows:
+* [C ] Navigate to your `index.less` file. Notice the file is blank. You have been asked to use a certain import order. That order is as follows:
 
 ```markdown
 1.variables.less
@@ -72,8 +73,8 @@ _You will know everything is working properly when you see the styles enabled fo
 
 #### Home Page - Desktop HTML & LESS
 
-* [ ] Take 10 minutes to review the code that has already been provided for you. Take time to see how the home page was built.
-* [ ] Add a viewport meta tag to the head of your index.html page
+* [C] Take 10 minutes to review the code that has already been provided for you. Take time to see how the home page was built.
+* [C] Add a viewport meta tag to the head of your index.html page
 * [ ] [Review the provided home desktop design file](design/Desktop.png). You are to build the missing navigation system and header image. You have been provided all content necessary in the [index.html file](index.html)
 * [ ] Navigation Styles: Use the `navigation.less` file for styling.
 * [ ] Main Content Styles: Use the `main.less` file for styling
