@@ -270,20 +270,51 @@ function getArtistByIndex(id, name) {
  * For example, if removeArtist is invoked with the data and the number 0,
  * it will remove Amedeo Modigliani from our dataset.
 */
-function removeArtist(/*code here*/) {
-    /* code here */
+function removeArtist(arr,indx) {
+  if(indx <= arr.length && indx >= 0){
+    
+    delete arr[indx];
+    // TODO adjust id number after deletion
+    return arr;
+    } 
+   else{
+    console.log( 'Sorry your id number is off. You better check it sir');
+    return arr;
+    
+  }
+
+
+
   }
   
   /**
 
 
-/* Task 5: Create a function called lotsOfArt() that takes artists as an argument and returns an array with names of artists who painted more than 100 paintings */
+/* Task 5: Create a function called lotsOfArt() that takes artists as an 
+argument and returns an array with names of artists who painted more than 
+100 paintings */
 
-function lotsOfArt(/* Code here */){
-
-    /* Code here */
-
+function lotsOfArt(ar){
+  let topArtists = [];
+    /* Return artists who painted more than 100 paintings */
+    for(let x = 0; x < ar.length; x++){
+      if(ar[x].paintings >= 100){
+        topArtists.push(ar[x]);
+      }
+    }
+    if(topArtists.length >= 1){
+    return topArtists;
+  } else{
+    /// There are no top artists here is your original lame array back with no top artists
+    return ar;
   }
+  }
+
+
+  function task5(ar){
+    let topArtists = ar[0].paintings;
+     console.log(topArtists);
+    }
 
 
 /* Task 6: Create a function called `addArtist` that can accept an array of information and add it to the artists array. Then, Add a 21st artist to the array (you) with custom information! 👩‍🎨👨‍🎨
@@ -358,6 +389,13 @@ function randomize(/* Code here */){
 // Execute task 1
  tsk();
 
-// Vincent van goah
-let msg  = getArtistByIndex(0,artists);
+// Task 2 & 3
+let msg  = getArtistByIndex(10,artists);
 console.log(msg);
+
+// Task 4
+let a = removeArtist(artists,8);
+//a.forEach(element => console.log(element));
+
+// Task 5
+let topA = lotsOfArt(artists);
