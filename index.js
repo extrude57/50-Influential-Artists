@@ -232,7 +232,31 @@ Use an array method to fix this issue and console.log() to check your work. */
  * it will return `The artist at index 0 is Amedeo Modigliani`.
 */
 function getArtistByIndex(id, name) {
-    /* code here */
+    /* fix vincent van dough issue */
+  let arr = name;
+  
+  if(id <= name.length && id >= 0){
+    let n = name[id].name;
+    if( n == 'Vincent van Dough'){
+      arr[id].name = 'Vincent Van Gough';
+      //console.log(arr[id].name);
+      n = 'The artist at index '+id+' is '+arr[id].name;
+      return n;
+    } else{
+      
+      n = 'The artist at index '+id+' is '+arr[id].name;
+      return n;
+  
+    }
+  } else{
+    return 'Sorry your id number is off. You better check it sir';
+  }
+
+
+    
+
+
+
   }
   
   /**
@@ -333,3 +357,7 @@ function randomize(/* Code here */){
 
 // Execute task 1
  tsk();
+
+// Vincent van goah
+let msg  = getArtistByIndex(0,artists);
+console.log(msg);
