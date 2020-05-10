@@ -199,3 +199,37 @@ header .title-container #bgimg button {
   font-size: 2.9rem;
   align-content: center;
 }
+body section,
+body .artists-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+body section .artist,
+body .artists-container .artist {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 36vw;
+  height: 100vh;
+  border: 1px solid green;
+}
+body section .artist img,
+body .artists-container .artist img {
+  border-radius: 4%;
+  width: 30vw;
+  height: 50vh;
+}
+body section .artist a,
+body .artists-container .artist a {
+  margin: 2vh 0vw 2vh 0vw;
+  font-size: 1.4rem;
+  text-decoration: none;
+  color: black;
+}
+body section .artist .bio,
+body .artists-container .artist .bio {
+  width: 30vw;
+  height: 20vh;
+}
