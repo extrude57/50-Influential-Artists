@@ -296,28 +296,41 @@ argument and returns an array with names of artists who painted more than
 
 function lotsOfArt(ar){
   let topArtists = [];
-    /* Return artists who painted more than 100 paintings */
-    for(let x = 0; x < ar.length; x++){
-      if(ar[x].paintings >= 100){
-        topArtists.push(ar[x]);
+  ar.forEach(e => 
+    {
+      if(e.paintings >= 100){
+        console.log(e.paintings);
+        topArtists.push(e);
       }
+   
     }
+  
+  );
+ // console.log('we are the guys with the top paintings over 100 '+topArtists[0].name);
+
+    
     if(topArtists.length >= 1){
     return topArtists;
   } else{
     /// There are no top artists here is your original lame array back with no top artists
     return ar;
   }
+
+
   }
 
 
   function task5(ar){
     let topArtists = ar[0].paintings;
+    
      console.log(topArtists);
     }
 
 
-/* Task 6: Create a function called `addArtist` that can accept an array of information and add it to the artists array. Then, Add a 21st artist to the array (you) with custom information! 👩‍🎨👨‍🎨
+/* Task 6: Create a function called `addArtist` 
+that can accept an array of information and add it to 
+the artists array. Then, Add a 21st artist to the array 
+(you) with custom information! 👩‍🎨👨‍🎨
 
 id: 21
 name: Your Name Here, 
@@ -398,4 +411,12 @@ let a = removeArtist(artists,8);
 //a.forEach(element => console.log(element));
 
 // Task 5
-let topA = lotsOfArt(artists);
+let topA = task5(artists);
+//topA.forEach(e >= console.log(e));
+let topAs = lotsOfArt(artists);
+topAs.forEach(e =>{ console.log(e)});
+
+
+
+
+
