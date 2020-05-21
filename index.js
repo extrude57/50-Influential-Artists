@@ -338,10 +338,21 @@ years: Your Birth Year - current day,
 genre: Web Design, 
 nationality: Your Nationality Here
 bio: Add 1-2 sentences (or use lorem ipsum) "*/
+// @ param 1 (ar the array to add as artist)
+// @ param 2 orgAr ( the original Array to add on to)
+function addArtist(ar,orgAr){
+ // let a= [];
+ // for(var n in ar){
+ //  orgAr.push( n);
+  //}
+for(var l = 0; l < ar.length; l++){
+  orgAr.push(ar[l]);
+}
 
-function addArtist(/* Code here */){
-
-    /* Code here */
+//orgAr.push(ar);
+//orgAr.forEach(e => {console.log(e)});
+return orgAr;
+    
 
   }
 
@@ -351,11 +362,30 @@ function addArtist(/* Code here */){
 
 // 🎨🎨 STRETCH 🎨🎨//
 
-/* STRETCH 1: Create a function called get20s() that takes data as an argument and returns an array with names of artists who were born the 20th century (1800-1900) */
+/* STRETCH 1: Create a function called get20s() that takes data 
+as an argument and returns an array with names of artists who
+ were born the 20th century (1800-1900) */
 
-function get20s(/* Code here */){
+function get20s(ar){
+  let newAr = [];
+  for(var l = 0; l < ar.length; l++){
+    if(ar.years > 1799 && ar.years < 1900){
+      console.log(ar[l]);
+    }
+  }
 
-    /* Code here */
+  ar.forEach(e => 
+    {
+      // convert e.years to a number then conditions for those years
+      if(e.years >= 100){
+        console.log(e.name);
+        newAr.push(e);
+      }
+   
+    })
+
+
+    return newAr;
 
   }
 
@@ -414,9 +444,30 @@ let a = removeArtist(artists,8);
 let topA = task5(artists);
 //topA.forEach(e >= console.log(e));
 let topAs = lotsOfArt(artists);
+console.log('top artists');
 topAs.forEach(e =>{ console.log(e)});
 
+// Task 6 add array to end of arrays collected
+let newAr =  [{
+  "id": 20,
+  "name": "Nicholas Lacapria",
+  "years": "1707 - 2020",
+  "genre": "Flag-art",
+  "nationality": "Reptilian",
+  "bio": "Nicholas Anthony Lacapria (Reptilian pronunciation: [ˈfɾiða ˈkalo]; born Magdalena Carmen Frida Kahlo y Calderón; 6 July 1907 – 13 July 1954) was a Mexican artist who painted many portraits, self-portraits and works inspired by the nature and artifacts of Mexico. Inspired by the country's popular culture, she employed a naïve folk art style to explore questions of identity, postcolonialism, gender, class and race in Mexican society. Her paintings often had strong autobiographical elements and mixed realism with fantasy. In addition to belonging to the post-revolutionary Mexicayotl movement, which sought to define a Mexican identity, Kahlo has been described as a surrealist or magical realist.Born to a German father and a mestiza mother, Kahlo spent most of her childhood and adult life at her family home in Coyoacán, La Casa Azul, now known and publicly accessible as the Frida Kahlo Museum. She was disabled by polio as a child. Until a traffic accident at age eighteen caused lifelong pain and medical problems, she had been a promising student headed for medical school. During her recovery, she returned to her childhood hobby of art with the idea of becoming an artist."
+}];
+// TODO: Make add artists as a form accepting input to the array
+let theArray = [];
+ theArray = addArtist(newAr,artists);
+
+console.log('new artist');
+
+theArray.forEach(e =>{ console.log(e)});
 
 
 
 
+// Stretch
+let twenty = get20s(artists);
+
+twenty.forEach(e => {console.log(e)});
